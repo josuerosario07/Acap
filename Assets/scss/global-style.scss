@@ -1,0 +1,75 @@
+@import "fonts";
+@import "mixins";
+h1 {
+  font-size: 50px;
+  font-family: nexaBlack;
+}
+h2 {
+  font-size: 45px;
+  font-family: nexaBold;
+}
+h3 {
+  font-size: 30px;
+  font-family: nexaBold;
+}
+h4 {
+  font-size: 23px;
+  font-family: nexaBold;
+}
+h5 {
+  font-size: 20px;
+  font-family: nexaLight;
+}
+p {
+  font-size: 17px;
+  font-family: nexaLight;
+}
+span {
+  font-size: 12px;
+  font-family: nexaBold;
+}
+a {
+  font-size: 12px;
+  font-family: nexaBold;
+}
+
+// preset-fonts
+
+.nexaBlack {
+  font-family: nexaBlack;
+}
+.nexaBold {
+  font-family: nexaBold;
+}
+.nexaLight {
+  font-family: nexaLight;
+}
+$nexaBlack: nexaBlack;
+$nexaBold: nexaBold;
+$nexaLight: nexaLight;
+
+// colors
+
+$blueAcap: #174896;
+$graytextAcap: rgba(
+  $color: #000000,
+  $alpha: 0.8
+);
+$lightblueAcap: #1176b0;
+$redAcap: #eb2b27;
+$goldAcap: #d9a561;
+$greenDollar: #00a566;
+$white: #fff;
+
+// buttons
+.btn-acap-light {
+  @include btn-acap-light;
+}
+.btn-acap-active {
+  @include btn-acap-active;
+}
+// containers
+.container {
+  max-width: 1088px;
+  @include display-b-center;
+}

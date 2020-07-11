@@ -1,0 +1,35 @@
+@mixin flexRow {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+}
+@mixin flexColumn {
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+}
+@mixin display-b-center {
+  display: block;
+  margin: 0 auto;
+}
+@mixin btn-acap-light {
+  font-size: 12px;
+  color: $lightblueAcap;
+  background-color: $white;
+  border: solid 1px $lightblueAcap;
+  min-width: 228px;
+  height: 43px;
+  &:hover {
+    background-color: $blueAcap;
+    color: $white;
+    border-color: $blueAcap;
+  }
+}
+@mixin btn-acap-active {
+  font-size: 12px;
+  color: $white;
+  background-color: $blueAcap;
+  border: solid 1px $blueAcap;
+  min-width: 228px;
+  height: 43px;
+}

@@ -1,0 +1,145 @@
+@mixin header-desktop {
+  .pad-head {
+    padding: 0 100px 0 100px;
+  }
+  .firts-head {
+    @include flexRow;
+    padding-top: 25px;
+    justify-content: space-between;
+    .logo {
+      img {
+        max-width: 222px;
+      }
+    }
+    .curren-change-info {
+      @include flexRow;
+      align-items: center;
+      .dropdown {
+        button {
+          background-color: $white;
+          border-radius: 4px;
+          width: 60px;
+          height: 28px;
+          font-size: 12px;
+          color: $greenDollar;
+          // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        }
+      }
+      .data-money {
+        @include flexRow;
+        span {
+          font-size: 12px;
+          font-family: nexaBold;
+          margin-left: 15px;
+        }
+        .sale {
+          color: $greenDollar;
+        }
+      }
+    }
+  }
+  .second-head {
+    @include flexRow;
+    justify-content: flex-end;
+    nav {
+      ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+          display: inline-block;
+          margin: 0 0 0 38px;
+          &:first-child {
+            margin-left: 0;
+          }
+          a {
+            color: $graytextAcap;
+            padding: 18px 0;
+            font-size: 13px;
+          }
+          .active {
+            border-bottom: solid $blueAcap 3px;
+          }
+        }
+      }
+    }
+  }
+  .third-head {
+    .elements {
+      @include flexRow;
+      justify-content: flex-end;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      box-shadow: 10px 16px 42px rgba(0, 0, 0, 0.249);
+      nav {
+        ul {
+          margin-bottom: 0;
+          padding: 0;
+          li {
+            display: inline-block;
+            margin: 0 0 0 17px;
+            &:first-child {
+              margin-left: 0;
+            }
+            a {
+              font-family: Helvetica;
+              text-transform: uppercase;
+              color: $graytextAcap;
+            }
+            .active {
+              color: $blueAcap;
+            }
+          }
+        }
+      }
+      .search {
+        margin: 0 0 0 17px;
+        input {
+          width: 0;
+          border: none;
+        }
+        button {
+          border: none;
+          background: none;
+        }
+      }
+      .divider {
+        height: 20px;
+        width: 1px;
+        background-color: $graytextAcap;
+      }
+      .cta-internet-banking {
+        margin: 0 0 0 17px;
+        button {
+          background-color: $redAcap;
+          color: $white;
+          height: 40px;
+          min-width: 155px;
+          border: none;
+          border-radius: 5px;
+          font-size: 13px;
+          font-family: $nexaBold;
+          img {
+            width: 15px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1366px) {
+    .pad-head {
+      padding: 25px 25px 0 25px;
+    }
+  }
+  @media screen and (max-width: 1220px) {
+    .third-head nav ul li,
+    .third-head .search,
+    .third-head .cta-internet-banking {
+      margin: 0 0 0 5px;
+    }
+  }
+  @media screen and (max-width: 1115px) {
+    display: none;
+  }
+}
