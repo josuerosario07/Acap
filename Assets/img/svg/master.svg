@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1187" height="552" viewBox="0 0 1187 552">
+  <defs>
+    <filter id="Rectangle_12" x="282" y="445" width="246" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Artboard_1">
+      <rect width="1187" height="552"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" clip-path="url(#clip-Artboard_1)">
+    <rect width="1187" height="552" fill="#fff"/>
+    <g id="Rectangle_135" data-name="Rectangle 135" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1187" height="552" stroke="none"/>
+      <rect x="0.5" y="0.5" width="1186" height="551" fill="none"/>
+    </g>
+    <text id="_Qué_tipo_de_solución_necesitas_" data-name="¿Qué tipo de solución necesitas?" transform="translate(72 120)" fill="#393838" font-size="45" font-family="NexaBold, Nexa Bold"><tspan x="0" y="0">Desktop</tspan></text>
+    <text id="La_casa_que_sueñas_esta_cerca" data-name="La casa que 
+sueñas esta cerca" transform="translate(72.445 223)" font-size="50" font-family="NexaBlack"><tspan x="0" y="0">H1</tspan></text>
+    <text id="_Qué_tipo_de_solución_necesitas_2" data-name="¿Qué tipo de solución necesitas?" transform="translate(72 285)" font-size="45" font-family="NexaBold, Nexa Bold"><tspan x="0" y="0">H2</tspan></text>
+    <text id="Ahorro_e_inversiones" data-name="Ahorro e 
+inversiones" transform="translate(73 333)" fill="rgba(0,0,0,0.8)" font-size="30" font-family="NexaBold, Nexa Bold"><tspan x="0" y="0">H3</tspan></text>
+    <text id="Ahorro_e_inversiones-2" data-name="Ahorro e 
+inversiones" transform="translate(73 371)" fill="rgba(0,0,0,0.8)" font-size="23" font-family="NexaBold, Nexa Bold"><tspan x="0" y="0">H4</tspan></text>
+    <text id="Ahorro_e_inversiones-3" data-name="Ahorro e 
+inversiones" transform="translate(73 405)" fill="rgba(0,0,0,0.8)" font-size="20" font-family="NexaLight, Nexa Light"><tspan x="0" y="0">H5</tspan></text>
+    <text id="Ahorro_e_inversiones-4" data-name="Ahorro e 
+inversiones" transform="translate(73 437)" fill="rgba(0,0,0,0.8)" font-size="17" font-family="NexaLight, Nexa Light"><tspan x="0" y="0">Parrafo</tspan></text>
+    <text id="Ahorro_e_inversiones-5" data-name="Ahorro e 
+inversiones" transform="translate(73 463)" fill="rgba(0,0,0,0.8)" font-size="12" font-family="NexaBold, Nexa Bold"><tspan x="0" y="0">Span</tspan></text>
+    <rect id="Rectangle_136" data-name="Rectangle 136" width="147" height="110" transform="translate(291 262)" fill="rgba(0,0,0,0.8)"/>
+    <rect id="Rectangle_137" data-name="Rectangle 137" width="147" height="110" transform="translate(458 262)" fill="#174896"/>
+    <rect id="Rectangle_138" data-name="Rectangle 138" width="147" height="110" transform="translate(625 262)" fill="#1176b0"/>
+    <rect id="Rectangle_139" data-name="Rectangle 139" width="147" height="110" transform="translate(792 262)" fill="#eb2b27"/>
+    <path id="Path_348" data-name="Path 348" d="M0,0H147V110H0Z" transform="translate(959 262)" fill="#d9a561"/>
+    <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_magna_aliquyam_erat_sed_diam_voluptua._At_vero_eos_et_accusam_et_justo_duo_dolores_et_ea_rebum._Stet_clita_kasd_gubergren_no_sea_takimata_" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata " transform="translate(291 86)" fill="rgba(0,0,0,0.8)" font-size="17" font-family="NexaLight, Nexa Light"><tspan x="0" y="13">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut </tspan><tspan x="0" y="33">labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo </tspan><tspan x="0" y="53">dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit </tspan><tspan x="0" y="73">amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor </tspan><tspan x="0" y="93">invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo </tspan><tspan x="0" y="113">duo dolores et ea rebum. Stet clita kasd gubergren</tspan></text>
+    <g id="Component_29_3" data-name="Component 29 – 3" transform="translate(291 390)">
+      <g id="Rectangle_12-2" data-name="Rectangle 12" fill="none" stroke="#1176b0" stroke-width="1">
+        <rect width="228" height="43" stroke="none"/>
+        <rect x="0.5" y="0.5" width="227" height="42" fill="none"/>
+      </g>
+      <text id="Conocer_más" data-name="Conocer más" transform="translate(77 25)" fill="#1176b0" font-size="12" font-family="NexaBold, Nexa Bold"><tspan x="0" y="0">Conocer más</tspan></text>
+    </g>
+    <g id="Component_30_4" data-name="Component 30 – 4" transform="translate(291 451)">
+      <g transform="matrix(1, 0, 0, 1, -291, -451)" filter="url(#Rectangle_12)">
+        <rect id="Rectangle_12-3" data-name="Rectangle 12" width="228" height="43" transform="translate(291 451)" fill="#174896"/>
+      </g>
+      <text id="Conocer_más-2" data-name="Conocer más" transform="translate(77 25)" fill="#fff" font-size="12" font-family="NexaBold, Nexa Bold"><tspan x="0" y="0">Conocer más</tspan></text>
+    </g>
+    <g id="Component_66_1" data-name="Component 66 – 1" transform="translate(872 390)">
+      <rect id="Rectangle_118" data-name="Rectangle 118" width="157.386" height="31.747" rx="5" fill="#eb2b27"/>
+      <g id="Group_212" data-name="Group 212" transform="translate(24.313 6.125)">
+        <g id="Group_222" data-name="Group 222" transform="translate(-1.49 0.875)">
+          <text id="Internet_Banking" data-name="Internet Banking" transform="translate(7.915 12)" fill="#fff" font-size="14" font-family="NexaBold, Nexa Bold"><tspan x="0" y="0">Internet Banking</tspan></text>
+          <g id="Group_42" data-name="Group 42" transform="translate(-5.824 2.163)">
+            <path id="Path_1" data-name="Path 1" d="M60.441,4.4H60v-.44a3.961,3.961,0,1,0-7.921,0V4.4h-.44a.44.44,0,0,0-.44.44v7.041a.44.44,0,0,0,.44.44h8.8a.44.44,0,0,0,.44-.44V4.84a.44.44,0,0,0-.44-.44Zm-7.481-.44a3.08,3.08,0,0,1,6.161,0V4.4H52.961ZM60,11.441H52.081V5.28H60Z" transform="translate(-51.201)" fill="#fff"/>
+            <path id="Path_2" data-name="Path 2" d="M189.837,256.712a1.071,1.071,0,1,0-1.368,1.364v.78a.357.357,0,1,0,.715,0v-.78A1.069,1.069,0,0,0,189.837,256.712Zm-1.01.715a.357.357,0,1,1,.357-.357.357.357,0,0,1-.357.357Z" transform="translate(-183.987 -248.319)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Component_64" data-name="Component 64" transform="translate(702 390)">
+      <g id="Rectangle_12-4" data-name="Rectangle 12" fill="none" stroke="#1176b0" stroke-width="1">
+        <rect width="157" height="31" stroke="none"/>
+        <rect x="0.5" y="0.5" width="156" height="30" fill="none"/>
+      </g>
+      <text id="Comparar" transform="translate(48 21)" fill="#1176b0" font-size="14" font-family="NexaBold, Nexa Bold"><tspan x="0" y="0">Comparar</tspan></text>
+    </g>
+    <g id="Component_65" data-name="Component 65" transform="translate(532 390)">
+      <g id="Rectangle_12-5" data-name="Rectangle 12" fill="#1176b0" stroke="#1176b0" stroke-width="1">
+        <rect width="157" height="31" stroke="none"/>
+        <rect x="0.5" y="0.5" width="156" height="30" fill="none"/>
+      </g>
+      <text id="Solicitar" transform="translate(54 19)" fill="#fff" font-size="14" font-family="NexaBold, Nexa Bold"><tspan x="0" y="0">Solicitar</tspan></text>
+    </g>
+  </g>
+</svg>

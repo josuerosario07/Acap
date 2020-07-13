@@ -1,5 +1,6 @@
 @import "fonts";
 @import "mixins";
+@import "vars";
 h1 {
   font-size: 50px;
   font-family: nexaBlack;
@@ -31,6 +32,7 @@ span {
 a {
   font-size: 12px;
   font-family: nexaBold;
+  text-decoration: none !important;
 }
 
 // preset-fonts
@@ -44,32 +46,65 @@ a {
 .nexaLight {
   font-family: nexaLight;
 }
-$nexaBlack: nexaBlack;
-$nexaBold: nexaBold;
-$nexaLight: nexaLight;
 
 // colors
 
-$blueAcap: #174896;
-$graytextAcap: rgba(
-  $color: #000000,
-  $alpha: 0.8
-);
-$lightblueAcap: #1176b0;
-$redAcap: #eb2b27;
-$goldAcap: #d9a561;
-$greenDollar: #00a566;
-$white: #fff;
+.blue-Acap {
+  color: $blueAcap;
+}
+.gray-Acap {
+  color: $graytextAcap;
+}
+.red-Acap {
+  color: $redAcap;
+}
+.gold-Acap {
+  color: $goldAcap;
+}
+.green-Acap {
+  color: $greenDollar;
+}
+.bg-gray {
+  background-color: $bg-gray;
+}
+.bg-blue {
+  background-color: $blueAcap;
+}
+.bg-red {
+  background-color: $redAcap;
+}
+.bg-gold {
+  background-color: $goldAcap;
+}
 
 // buttons
 .btn-acap-light {
   @include btn-acap-light;
 }
+.btn-acap-blue {
+  @include btn-acap-blue;
+}
 .btn-acap-active {
   @include btn-acap-active;
+}
+.btn-news-home {
+  @include btn-news-home;
 }
 // containers
 .container {
   max-width: 1088px;
   @include display-b-center;
+}
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+//cards acap
+
+.item-card-acap {
+  @include card-item;
+}
+.card-news-home-acap {
+  @include card-news;
 }

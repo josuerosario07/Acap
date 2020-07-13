@@ -1,0 +1,24 @@
+@mixin carousel {
+  .carousel-inner {
+    .carousel-item {
+      //   height: 584px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .carousel-caption {
+        bottom: unset;
+        top: 50%;
+        left: 35%;
+        transform: translate(-65%, -50%);
+        text-align: left;
+        max-width: 593px;
+      }
+    }
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    // display: none;
+  }
+}

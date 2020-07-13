@@ -19,10 +19,27 @@
   border: solid 1px $lightblueAcap;
   min-width: 228px;
   height: 43px;
+  font-family: $nexaBold;
   &:hover {
     background-color: $blueAcap;
     color: $white;
     border-color: $blueAcap;
+    transition: 0.2s;
+  }
+}
+@mixin btn-acap-blue {
+  font-size: 12px;
+  color: $white;
+  background-color: $blueAcap;
+  border: solid 1px $white;
+  min-width: 228px;
+  height: 43px;
+  font-family: $nexaBold;
+  &:hover {
+    background-color: $white;
+    color: $blueAcap;
+    border-color: $white;
+    transition: 0.2s;
   }
 }
 @mixin btn-acap-active {
@@ -32,4 +49,65 @@
   border: solid 1px $blueAcap;
   min-width: 228px;
   height: 43px;
+}
+@mixin btn-news-home {
+  width: 201px;
+  height: 44px;
+  border: solid 1px $blueAcap;
+  background-color: $white;
+  color: $blueAcap;
+  font-size: 12px;
+  &:hover {
+    background-color: $blueAcap;
+    color: $white;
+    transition: 0.2s;
+  }
+}
+
+@mixin card-item {
+  max-width: 260px;
+  margin-top: 30px;
+  .icon {
+    width: 106px;
+    height: 106px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  h4 {
+    max-width: 130px;
+    margin: 30px 0 20px 0;
+  }
+  p {
+    min-height: 126px;
+  }
+  button {
+    margin-top: 30px;
+  }
+}
+@mixin card-news {
+  max-width: 325px;
+  border: solid 1px #eaeaea;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.16);
+  .picture-news {
+    width: 100%;
+    height: 234px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .body-card-news-acap {
+    padding: 21px 15px;
+    .title-news {
+      margin: 0 0 21px 0;
+    }
+    button {
+      @include display-b-center;
+      margin-top: 60px;
+    }
+  }
 }

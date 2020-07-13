@@ -1,0 +1,30 @@
+@mixin bar-botton {
+  background-color: $blueAcap;
+  width: 100%;
+  height: 52px;
+  @include flexRow;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  nav {
+    ul {
+      li {
+        display: inline-block;
+        margin: 0;
+        border-right: 1px solid $white;
+        padding: 0 20px;
+        &:last-child {
+          border-right: none;
+        }
+        a {
+          color: $white;
+          img {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
