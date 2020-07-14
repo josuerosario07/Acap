@@ -215,6 +215,35 @@ ul {
   margin-top: 60px;
 }
 
+.header-fix {
+  transition: 0.2s;
+}
+.header-fix .firts-head,
+.header-fix .second-head {
+  display: none;
+}
+.header-fix .third-head {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: white;
+}
+.header-fix .third-head .elements {
+  justify-content: space-between !important;
+}
+.header-fix .third-head .left-side {
+  display: block !important;
+}
+.header-fix .third-head .left-side .logo-mini-nav {
+  width: 130px;
+}
+.header-fix .third-head .right-side .search,
+.header-fix .third-head .right-side .divider {
+  display: none;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -224,6 +253,9 @@ body {
   color: rgba(0, 0, 0, 0.8);
   font-family: nexaLight;
   position: relative;
+}
+body .header-desktop {
+  transition: 0.2s;
 }
 body .header-desktop .pad-head {
   padding: 0 100px 0 100px;
@@ -300,45 +332,54 @@ body .header-desktop .third-head .elements {
   padding-bottom: 10px;
   box-shadow: 10px 16px 42px rgba(0, 0, 0, 0.249);
 }
-body .header-desktop .third-head .elements nav ul {
+body .header-desktop .third-head .elements .left-side {
+  display: none;
+}
+body .header-desktop .third-head .elements .right-side {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  align-items: center;
+}
+body .header-desktop .third-head .elements .right-side nav ul {
   margin-bottom: 0;
   padding: 0;
 }
-body .header-desktop .third-head .elements nav ul li {
+body .header-desktop .third-head .elements .right-side nav ul li {
   display: inline-block;
   margin: 0 0 0 17px;
 }
-body .header-desktop .third-head .elements nav ul li:first-child {
+body .header-desktop .third-head .elements .right-side nav ul li:first-child {
   margin-left: 0;
 }
-body .header-desktop .third-head .elements nav ul li a {
+body .header-desktop .third-head .elements .right-side nav ul li a {
   font-family: Helvetica;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.8);
 }
-body .header-desktop .third-head .elements nav ul li .active {
+body .header-desktop .third-head .elements .right-side nav ul li .active {
   color: #174896;
 }
-body .header-desktop .third-head .elements .search {
+body .header-desktop .third-head .elements .right-side .search {
   margin: 0 0 0 17px;
 }
-body .header-desktop .third-head .elements .search input {
+body .header-desktop .third-head .elements .right-side .search input {
   width: 0;
   border: none;
 }
-body .header-desktop .third-head .elements .search button {
+body .header-desktop .third-head .elements .right-side .search button {
   border: none;
   background: none;
 }
-body .header-desktop .third-head .elements .divider {
+body .header-desktop .third-head .elements .right-side .divider {
   height: 20px;
   width: 1px;
   background-color: rgba(0, 0, 0, 0.8);
 }
-body .header-desktop .third-head .elements .cta-internet-banking {
-  margin: 0 0 0 17px;
+body .header-desktop .third-head .elements .right-side .cta-internet-banking {
+  margin: 0 0 0 8px;
 }
-body .header-desktop .third-head .elements .cta-internet-banking button {
+body .header-desktop .third-head .elements .right-side .cta-internet-banking button {
   background-color: #eb2b27;
   color: #fff;
   height: 40px;
@@ -348,7 +389,7 @@ body .header-desktop .third-head .elements .cta-internet-banking button {
   font-size: 13px;
   font-family: nexaBold;
 }
-body .header-desktop .third-head .elements .cta-internet-banking button img {
+body .header-desktop .third-head .elements .right-side .cta-internet-banking button img {
   width: 15px;
   margin-right: 5px;
 }
@@ -361,13 +402,126 @@ body .header-desktop .third-head .elements .cta-internet-banking button img {
   body .header-desktop .third-head nav ul li,
 body .header-desktop .third-head .search,
 body .header-desktop .third-head .cta-internet-banking {
-    margin: 0 0 0 5px;
+    margin: 0 0 0 5px !important;
   }
 }
 @media screen and (max-width: 1115px) {
   body .header-desktop {
     display: none;
   }
+}
+body .responsive-header {
+  display: none;
+}
+body .responsive-header .first-head .items {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  height: 100px;
+}
+body .responsive-header .first-head .items .left-side img {
+  width: 193px;
+}
+body .responsive-header .first-head .items .right-side .search {
+  margin: 0 0 0 17px;
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+}
+body .responsive-header .first-head .items .right-side .search input {
+  width: 0;
+  border: none;
+}
+body .responsive-header .first-head .items .right-side .search button {
+  border: none !important;
+  background: none !important;
+  margin-right: 10px;
+}
+body .responsive-header .first-head .items .right-side .search button:last-child {
+  margin: 0;
+}
+body .responsive-header .second-head .items {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 67px;
+  align-items: center;
+  background-color: #fafafa;
+}
+body .responsive-header .second-head .items .left-side .curren-change-info {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  align-items: center;
+}
+body .responsive-header .second-head .items .left-side .curren-change-info .dropdown button {
+  background-color: #fff;
+  border-radius: 4px;
+  width: 60px;
+  height: 28px;
+  font-size: 12px;
+  color: #00a566;
+}
+body .responsive-header .second-head .items .left-side .curren-change-info .data-money {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+}
+body .responsive-header .second-head .items .left-side .curren-change-info .data-money span {
+  font-size: 12px;
+  font-family: nexaBold;
+  margin-left: 15px;
+}
+body .responsive-header .second-head .items .left-side .curren-change-info .data-money .sale {
+  color: #00a566;
+}
+body .responsive-header .second-head .items .right-side .cta-internet-banking {
+  margin: 0 0 0 8px;
+}
+body .responsive-header .second-head .items .right-side .cta-internet-banking button {
+  background-color: #eb2b27;
+  color: #fff;
+  height: 40px;
+  min-width: 155px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: nexaBold;
+}
+body .responsive-header .second-head .items .right-side .cta-internet-banking button img {
+  width: 15px;
+  margin-right: 5px;
+}
+@media screen and (max-width: 426px) {
+  body .responsive-header .second-head .left-side {
+    display: none;
+  }
+  body .responsive-header .second-head .right-side {
+    width: 100%;
+  }
+  body .responsive-header .second-head .right-side .cta-internet-banking button {
+    width: 100%;
+  }
+}
+body .list-menu-responsive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #174896;
+  z-index: 999;
+}
+body .list-menu-responsive .content .list-menu ul li {
+  list-style-type: none;
+}
+body .list-menu-responsive .content .list-menu ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 body .carousel-content .carousel-inner .carousel-item img {
   width: 100%;

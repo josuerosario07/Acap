@@ -1,4 +1,5 @@
 @mixin header-desktop {
+  transition: 0.2s;
   .pad-head {
     padding: 0 100px 0 100px;
   }
@@ -71,57 +72,64 @@
       padding-top: 10px;
       padding-bottom: 10px;
       box-shadow: 10px 16px 42px rgba(0, 0, 0, 0.249);
-      nav {
-        ul {
-          margin-bottom: 0;
-          padding: 0;
-          li {
-            display: inline-block;
-            margin: 0 0 0 17px;
-            &:first-child {
-              margin-left: 0;
-            }
-            a {
-              font-family: Helvetica;
-              text-transform: uppercase;
-              color: $graytextAcap;
-            }
-            .active {
-              color: $blueAcap;
+      .left-side {
+        display: none;
+      }
+      .right-side {
+        @include flexRow;
+        align-items: center;
+        nav {
+          ul {
+            margin-bottom: 0;
+            padding: 0;
+            li {
+              display: inline-block;
+              margin: 0 0 0 17px;
+              &:first-child {
+                margin-left: 0;
+              }
+              a {
+                font-family: Helvetica;
+                text-transform: uppercase;
+                color: $graytextAcap;
+              }
+              .active {
+                color: $blueAcap;
+              }
             }
           }
         }
-      }
-      .search {
-        margin: 0 0 0 17px;
-        input {
-          width: 0;
-          border: none;
+        .search {
+          margin: 0 0 0 17px;
+          input {
+            width: 0;
+            border: none;
+          }
+          button {
+            border: none;
+            background: none;
+          }
         }
-        button {
-          border: none;
-          background: none;
+        .divider {
+          height: 20px;
+          width: 1px;
+          background-color: $graytextAcap;
         }
-      }
-      .divider {
-        height: 20px;
-        width: 1px;
-        background-color: $graytextAcap;
-      }
-      .cta-internet-banking {
-        margin: 0 0 0 17px;
-        button {
-          background-color: $redAcap;
-          color: $white;
-          height: 40px;
-          min-width: 155px;
-          border: none;
-          border-radius: 5px;
-          font-size: 13px;
-          font-family: $nexaBold;
-          img {
-            width: 15px;
-            margin-right: 5px;
+        .cta-internet-banking {
+          margin: 0 0 0 8px;
+          button {
+            background-color: $redAcap;
+            color: $white;
+            height: 40px;
+            min-width: 155px;
+            border: none;
+            border-radius: 5px;
+            font-size: 13px;
+            font-family: $nexaBold;
+            img {
+              width: 15px;
+              margin-right: 5px;
+            }
           }
         }
       }
@@ -136,10 +144,153 @@
     .third-head nav ul li,
     .third-head .search,
     .third-head .cta-internet-banking {
-      margin: 0 0 0 5px;
+      margin: 0 0 0 5px !important;
     }
   }
   @media screen and (max-width: 1115px) {
     display: none;
+  }
+}
+.header-fix {
+  transition: 0.2s;
+  .firts-head,
+  .second-head {
+    display: none;
+  }
+  .third-head {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
+    .elements {
+      justify-content: space-between !important;
+    }
+    .left-side {
+      display: block !important;
+      .logo-mini-nav {
+        width: 130px;
+      }
+    }
+    .right-side {
+      // nav {
+      //   ul {
+      //     li {
+      //       margin: 0 0 0 5px !important;
+      //     }
+      //   }
+      // }
+      .search,
+      .divider {
+        display: none;
+      }
+    }
+  }
+}
+
+@mixin responsive-nav {
+  .first-head {
+    .items {
+      @include flexRow;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      height: 100px;
+      .left-side {
+        img {
+          width: 193px;
+        }
+      }
+      .right-side {
+        .search {
+          margin: 0 0 0 17px;
+          @include flexRow;
+          input {
+            width: 0;
+            border: none;
+          }
+          button {
+            border: none !important;
+            background: none !important;
+            margin-right: 10px;
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .second-head {
+    .items {
+      @include flexRow;
+      justify-content: space-between;
+      height: 67px;
+      align-items: center;
+      background-color: #fafafa;
+      .left-side {
+        .curren-change-info {
+          @include flexRow;
+          align-items: center;
+          .dropdown {
+            button {
+              background-color: $white;
+              border-radius: 4px;
+              width: 60px;
+              height: 28px;
+              font-size: 12px;
+              color: $greenDollar;
+              // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            }
+          }
+          .data-money {
+            @include flexRow;
+            span {
+              font-size: 12px;
+              font-family: nexaBold;
+              margin-left: 15px;
+            }
+            .sale {
+              color: $greenDollar;
+            }
+          }
+        }
+      }
+      .right-side {
+        .cta-internet-banking {
+          margin: 0 0 0 8px;
+          button {
+            background-color: $redAcap;
+            color: $white;
+            height: 40px;
+            min-width: 155px;
+            border: none;
+            border-radius: 5px;
+            font-size: 13px;
+            font-family: $nexaBold;
+            img {
+              width: 15px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 426px) {
+    .second-head {
+      .left-side {
+        display: none;
+      }
+      .right-side {
+        width: 100%;
+        .cta-internet-banking {
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }

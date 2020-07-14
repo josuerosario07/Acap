@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"headers.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/headers.scss"],"names":[],"mappings":"AAyJA;EACE;;AACA;AAAA;EAEE;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;;AAEF;EACE;;AACA;EACE;;AAWF;AAAA;EAEE","file":"headers.css"}

@@ -1,0 +1,16 @@
+body {
+  @media screen and (max-width: 991px) {
+    .container {
+      padding: 0;
+      max-width: 607px;
+    }
+    .responsive-header {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 426px) {
+    .container {
+      max-width: 303px;
+    }
+  }
+}
