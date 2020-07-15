@@ -816,10 +816,11 @@ body footer .container .inner-footer ul li {
 body footer .container .inner-footer ul li:first-child {
   border-left: none;
 }
+.no-scroll {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 991px) {
-  body::-webkit-scrollbar {
-    display: none;
-  }
   body .container {
     padding: 0;
     max-width: 607px;

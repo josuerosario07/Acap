@@ -128,3 +128,6 @@ body {
     @include footer;
   }
 }
+.no-scroll {
+  overflow: hidden;
+}

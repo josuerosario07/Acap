@@ -7,10 +7,12 @@ $(document).ready(function() {
     }
   });
 
-  $('#open').click(function() {
-    $('#menu-responsive').toggleClass('open');
-   });
-   $('#close').click(function() {
-    $('#menu-responsive').removeClass('open');
-   });
+  $("#open").click(function() {
+    $("#menu-responsive").toggleClass("open");
+    $("body").addClass("no-scroll");
+  });
+  $("#close").click(function() {
+    $("#menu-responsive").removeClass("open");
+    $("body").removeClass("no-scroll");
+  });
 });

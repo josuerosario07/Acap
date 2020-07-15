@@ -816,5 +816,8 @@ body footer .container .inner-footer ul li {
 body footer .container .inner-footer ul li:first-child {
   border-left: none;
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 /*# sourceMappingURL=style.css.map */
