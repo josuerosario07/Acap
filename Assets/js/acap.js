@@ -6,4 +6,11 @@ $(document).ready(function() {
       $("#menu").removeClass("header-fix");
     }
   });
+
+  $('#open').click(function() {
+    $('#menu-responsive').toggleClass('open');
+   });
+   $('#close').click(function() {
+    $('#menu-responsive').removeClass('open');
+   });
 });

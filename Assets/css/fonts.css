@@ -1,14 +1,11 @@
 @font-face {
   font-family: nexaBlack;
-  src: url(../fonts/NexaBlack.ttf);
-}
+  src: url(../fonts/NexaBlack.ttf); }
 @font-face {
   font-family: nexaBold;
-  src: url(../fonts/NexaBold.otf);
-}
+  src: url(../fonts/NexaBold.otf); }
 @font-face {
   font-family: nexaLight;
-  src: url(../fonts/NexaLight.otf);
-}
+  src: url(../fonts/NexaLight.otf); }
 
 /*# sourceMappingURL=fonts.css.map */

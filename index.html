@@ -116,7 +116,7 @@
             <div class="search">
                   <input type="search" placeholder="Search" aria-label="Search">
                   <button><img src="./Assets/img/svg/search.svg" alt=""></button>
-                   <button><img src="./Assets/img/svg/burger-acap-icon.svg" alt=""></button>
+                   <button id="open"><img src="./Assets/img/svg/burger-acap-icon.svg" alt=""></button>
               </div>
              
           </div>
@@ -161,10 +161,39 @@
         </div>
     </div>
 
-    <div class="list-menu-responsive">
+    <div id="menu-responsive" class="list-menu-responsive">
       <div class="container">
+        <img class="close" src="./Assets/img/svg/close.svg" alt="" id="close">
+
         <div class="content">
-          <div class="head-menu"></div>
+          <div class="head-menu">
+            <div class="logo">
+              <img src="./Assets/img/svg/logo-white.svg" alt="">
+            </div>
+            <div class="curren-change-info">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  USD
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">EUR</a>
+                  <a class="dropdown-item" href="#">US</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <div class="data-money">
+                <span>Compra: 57.20</span>
+                <span class="sale">Venta: 58.20</span>
+              </div>
+            </div>
+          </div>
           <div class="list-menu">
             <ul
             ><li class="nav-item dropdown">
@@ -174,7 +203,6 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
@@ -209,11 +237,7 @@
               <a href="">Banca</a>
             </li>
           </ul>
-            <p>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-target
-  </button>
-</p>
+
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
