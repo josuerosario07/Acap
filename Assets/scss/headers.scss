@@ -294,3 +294,113 @@
     }
   }
 }
+
+@mixin menu-responsive {
+  transition: 0.2s;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 0;
+  height: 0;
+  background-color: $blueAcap;
+  z-index: 999;
+  overflow-y: scroll;
+  .container {
+    position: relative;
+    .close {
+      position: absolute;
+      right: 0;
+      top: 50px;
+      z-index: 999;
+    }
+    .content {
+      // overflow-y: scroll;
+      .head-menu {
+        width: 100%;
+        @include flexColumn;
+        justify-content: center;
+        align-items: center;
+        .logo {
+          margin-bottom: 30px;
+          width: 100%;
+          padding: 30px;
+          img {
+            @include display-b-center;
+            width: 280px;
+          }
+        }
+        .curren-change-info {
+          @include flexRow;
+          align-items: center;
+          justify-content: center;
+          border-top: solid 1px rgba(255, 255, 255, 0.466);
+          border-bottom: solid 1px rgba(255, 255, 255, 0.466);
+
+          width: 100%;
+          padding: 30px;
+
+          .dropdown {
+            button {
+              background-color: $white;
+              border-radius: 4px;
+              width: 60px;
+              height: 28px;
+              font-size: 12px;
+              color: $greenDollar;
+              font-family: $nexaBold;
+              // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            }
+          }
+          .data-money {
+            @include flexRow;
+            span {
+              font-size: 12px;
+              font-family: nexaBold;
+              margin-left: 15px;
+              color: white;
+            }
+            .sale {
+              color: $greenDollar;
+            }
+          }
+        }
+      }
+      .list-menu {
+        margin-top: 80px;
+        ul {
+          li {
+            list-style-type: none;
+            margin-top: 37px;
+            border-bottom: 1px solid white;
+            a {
+              color: $white;
+              text-decoration: none;
+              font-size: 25px;
+            }
+          }
+          .dropdown {
+            .dropdown-menu {
+              width: 100%;
+              position: relative;
+              background-color: transparent;
+              border: none;
+              padding: 3%;
+              a {
+                font-family: $nexaLight !important;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.287);
+                padding: 1%;
+              }
+            }
+          }
+          .nav-link {
+            padding: 0;
+          }
+          .show {
+            position: relative !important;
+            transform: unset !important;
+          }
+        }
+      }
+    }
+  }
+}

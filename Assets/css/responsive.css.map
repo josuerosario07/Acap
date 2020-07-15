@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AACE,oCAAqC;EACnC,eAAW;IACT,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,KAAK;EAElB,uBAAmB;IACjB,OAAO,EAAE,KAAK;AAGlB,oCAAqC;EACnC,eAAW;IACT,SAAS,EAAE,KAAK",
-"sources": ["../scss/responsive.scss"],
-"names": [],
-"file": "responsive.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/responsive.scss"],"names":[],"mappings":"AACE;EACE;IACE;;EAEF;IACE;IACA;;EAEF;IACE;;;AAGJ;EACE;IACE","file":"responsive.css"}
