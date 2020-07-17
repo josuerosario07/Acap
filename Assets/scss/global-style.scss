@@ -108,3 +108,10 @@ ul {
 .card-news-home-acap {
   @include card-news;
 }
+
+.title {
+  @include display-b-center;
+  margin-top: 92px;
+
+  max-width: 712px;
+}

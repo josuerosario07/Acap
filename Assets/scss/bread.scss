@@ -1,0 +1,14 @@
+.bread{
+    background-color: #F7F5F5 !important;
+    ol{
+        background-color: transparent;
+        a{
+            color: #7e7e7e;
+            font-size: 12px;
+        }
+        .active{
+            font-family: $nexaBold;
+            color: $blueAcap;
+        }
+    }
+}

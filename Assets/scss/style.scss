@@ -1,6 +1,8 @@
 @import "global-style";
 @import "headers";
 @import "carousel-setting";
+@import "banner-sub";
+@import "bread";
 @import "bar-botton";
 @import "footer";
 * {
@@ -30,17 +32,14 @@ body {
   .carousel-content {
     @include carousel;
   }
+  .banner-sec{
+    @include banner-sub;
+  }
   .bar-botton {
     @include bar-botton;
   }
   .solution-home {
     .container {
-      .title {
-        @include display-b-center;
-        margin-top: 92px;
-
-        max-width: 712px;
-      }
       .items {
         margin-top: 60px;
       }
@@ -123,6 +122,20 @@ body {
       margin-top: 72px;
       justify-content: space-between;
     }
+  }
+
+  .content-panel{
+    padding: 0 0 40px 0;
+    .items-panel{
+      @include flexRow;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .item-card-acap{
+        max-width: 227px;
+        margin-bottom: 40px;
+      }
+    }
+
   }
   footer {
     @include footer;

@@ -171,6 +171,12 @@ ul {
       margin: 0 auto;
       margin-top: 60px; }
 
+.title {
+  display: block;
+  margin: 0 auto;
+  margin-top: 92px;
+  max-width: 712px; }
+
 .header-fix {
   transition: 0.2s; }
   .header-fix .firts-head,
@@ -192,6 +198,17 @@ ul {
     .header-fix .third-head .right-side .search,
     .header-fix .third-head .right-side .divider {
       display: none; }
+
+.bread {
+  background-color: #F7F5F5 !important; }
+  .bread ol {
+    background-color: transparent; }
+    .bread ol a {
+      color: #7e7e7e;
+      font-size: 12px; }
+    .bread ol .active {
+      font-family: nexaBold;
+      color: #174896; }
 
 * {
   margin: 0;
@@ -283,7 +300,8 @@ body {
               text-transform: uppercase;
               color: rgba(0, 0, 0, 0.8); }
             body .header-desktop .third-head .elements .right-side nav ul li .active {
-              color: #174896; }
+              color: #174896;
+              font-weight: 600; }
         body .header-desktop .third-head .elements .right-side .search {
           margin: 0 0 0 17px; }
           body .header-desktop .third-head .elements .right-side .search input {
@@ -499,6 +517,26 @@ body {
     transform: translate(-65%, -50%);
     text-align: left;
     max-width: 593px; }
+  body .banner-sec {
+    position: relative; }
+    body .banner-sec .banner-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; }
+    body .banner-sec .container .inner-banner {
+      min-height: 560px;
+      color: white;
+      position: relative; }
+      body .banner-sec .container .inner-banner .caption-banner {
+        transform: translate(0, -50%);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        max-width: 700px; }
   body .bar-botton {
     background-color: #174896;
     width: 100%;
@@ -522,11 +560,6 @@ body {
         color: #fff; }
         body .bar-botton nav ul li a img {
           margin: 0 10px; }
-  body .solution-home .container .title {
-    display: block;
-    margin: 0 auto;
-    margin-top: 92px;
-    max-width: 712px; }
   body .solution-home .container .items {
     margin-top: 60px; }
   body .canals-home {
@@ -584,6 +617,17 @@ body {
       width: 100%;
       margin-top: 72px;
       justify-content: space-between; }
+  body .content-panel {
+    padding: 0 0 40px 0; }
+    body .content-panel .items-panel {
+      display: flex;
+      flex-flow: row;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      body .content-panel .items-panel .item-card-acap {
+        max-width: 227px;
+        margin-bottom: 40px; }
   body footer {
     padding: 75px 0;
     background-color: #eaeaea; }

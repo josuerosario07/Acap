@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAM;EACF,gBAAgB,EAAE,kBAAkB;EACpC,SAAE;IACE,gBAAgB,EAAE,WAAW",
+"sources": ["../scss/bread.scss"],
+"names": [],
+"file": "bread.css"
+}

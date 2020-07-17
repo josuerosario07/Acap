@@ -171,4 +171,10 @@ ul {
       margin: 0 auto;
       margin-top: 60px; }
 
+.title {
+  display: block;
+  margin: 0 auto;
+  margin-top: 92px;
+  max-width: 712px; }
+
 /*# sourceMappingURL=global-style.css.map */
