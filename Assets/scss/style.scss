@@ -5,10 +5,10 @@
 @import "bread";
 @import "bar-botton";
 @import "footer";
-// * {
-//   margin: 0;
-//   box-sizing: border-box;
-// }
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   color: $graytextAcap;
   font-family: $nexaLight;
