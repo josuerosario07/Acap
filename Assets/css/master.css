@@ -135,7 +135,9 @@ ul {
 
 .item-card-acap {
   max-width: 260px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  min-height: 445px;
+  position: relative; }
   .item-card-acap .icon {
     width: 106px;
     height: 106px; }
@@ -144,12 +146,13 @@ ul {
       height: 100%;
       object-fit: contain; }
   .item-card-acap h4 {
-    max-width: 130px;
+    max-width: 220px;
     margin: 30px 0 20px 0; }
   .item-card-acap p {
     min-height: 126px; }
   .item-card-acap button {
-    margin-top: 30px; }
+    position: absolute;
+    bottom: 0; }
 
 .card-news-home-acap {
   max-width: 325px;
