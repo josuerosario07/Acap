@@ -297,12 +297,12 @@
 }
 
 @mixin menu-responsive {
-  transition: 0.1s all ease-in-out;
+  transition: 0.2s;
   position: fixed;
   top: 0;
-  left: -200%;
-  width: 100vw;
-  height: 100vh;
+  left: -100%;
+  width: 0;
+  height: 0;
   background-color: $blueAcap;
   z-index: 999;
   overflow-y: scroll;
@@ -405,4 +405,3 @@
     }
   }
 }
-
