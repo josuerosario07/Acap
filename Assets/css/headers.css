@@ -1,23 +1,30 @@
 .header-fix {
-  transition: 0.2s; }
-  .header-fix .firts-head,
-  .header-fix .second-head {
-    display: none; }
-  .header-fix .third-head {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    background-color: white; }
-    .header-fix .third-head .elements {
-      justify-content: space-between !important; }
-    .header-fix .third-head .left-side {
-      display: block !important; }
-      .header-fix .third-head .left-side .logo-mini-nav {
-        width: 130px; }
-    .header-fix .third-head .right-side .search,
-    .header-fix .third-head .right-side .divider {
-      display: none; }
+  transition: 0.2s;
+}
+.header-fix .firts-head,
+.header-fix .second-head {
+  display: none;
+}
+.header-fix .third-head {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: white;
+}
+.header-fix .third-head .elements {
+  justify-content: space-between !important;
+}
+.header-fix .third-head .left-side {
+  display: block !important;
+}
+.header-fix .third-head .left-side .logo-mini-nav {
+  width: 130px;
+}
+.header-fix .third-head .right-side .search,
+.header-fix .third-head .right-side .divider {
+  display: none;
+}
 
 /*# sourceMappingURL=headers.css.map */
