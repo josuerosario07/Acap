@@ -32,7 +32,7 @@ body {
   .carousel-content {
     @include carousel;
   }
-  .banner-sec{
+  .banner-sec {
     @include banner-sub;
   }
   .bar-botton {
@@ -124,18 +124,43 @@ body {
     }
   }
 
-  .content-panel{
+  .content-panel {
     padding: 0 0 40px 0;
-    .items-panel{
+    .items-panel {
       @include flexRow;
       justify-content: space-around;
       flex-wrap: wrap;
-      .item-card-acap{
+      .item-card-acap {
         max-width: 227px;
         margin-bottom: 40px;
       }
     }
-
+    .description-product {
+      .title {
+        h3 {
+          color: $blueAcap;
+        }
+      }
+      .nav-tabs {
+        margin-top: 90px;
+        li {
+          transition: 0.3s all ease-in-out;
+          .nav-link {
+            padding: 16px 25px;
+            background-color: #cbcbcb;
+            color: black;
+            border-radius: 0;
+            border: none;
+            font-family: $nexaLight;
+          }
+          .active {
+            background-color: $blueAcap;
+            color: white;
+            font-family: $nexaBold;
+          }
+        }
+      }
+    }
   }
   footer {
     @include footer;
