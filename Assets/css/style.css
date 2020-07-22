@@ -26,7 +26,7 @@ h3 {
 }
 
 h4 {
-  font-size: 23px;
+  font-size: 24px;
   font-family: nexaBold;
 }
 
@@ -807,6 +807,9 @@ body .content-panel .items-panel .item-card-acap {
   max-width: 227px;
   margin-bottom: 40px;
 }
+body .content-panel .description-product {
+  padding: 15px;
+}
 body .content-panel .description-product .title h3 {
   color: #174896;
 }
@@ -828,6 +831,15 @@ body .content-panel .description-product .nav-tabs li .active {
   background-color: #174896;
   color: white;
   font-family: nexaBold;
+}
+body .content-panel .description-product .tab-content {
+  margin-top: 60px;
+}
+body .content-panel .description-product .tab-content .tab-pane h4 {
+  margin: 45px 0 15px 0;
+}
+body .content-panel .description-product .tab-content .tab-pane h5 {
+  margin: 25px 0;
 }
 body footer {
   padding: 75px 0;

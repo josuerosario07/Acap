@@ -136,6 +136,7 @@ body {
       }
     }
     .description-product {
+      padding: 15px;
       .title {
         h3 {
           color: $blueAcap;
@@ -157,6 +158,17 @@ body {
             background-color: $blueAcap;
             color: white;
             font-family: $nexaBold;
+          }
+        }
+      }
+      .tab-content {
+        margin-top: 60px;
+        .tab-pane {
+          h4 {
+            margin: 45px 0 15px 0;
+          }
+          h5 {
+            margin: 25px 0;
           }
         }
       }
