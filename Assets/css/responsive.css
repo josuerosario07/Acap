@@ -1,15 +1,136 @@
 @media screen and (max-width: 991px) {
-  body .container {
+  .container {
     padding: 0;
     max-width: 607px;
   }
-  body .responsive-header {
-    display: block;
+
+  .responsive-header {
+    display: block !important;
+  }
+
+  .news-home .cards-news-home .card-news-home-acap {
+    max-width: 290px;
+  }
+  .news-home .cards-news-home .card-news-home-acap:last-child {
+    display: none;
+  }
+
+  .bar-botton {
+    display: none !important;
+  }
+
+  .nav-ed .container {
+    max-width: 100%;
+  }
+
+  .select-items {
+    flex-wrap: wrap !important;
+  }
+  .select-items .selector-group:nth-child(1) {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .select-items .selector-group:nth-child(1) select {
+    max-width: unset;
+    width: 100% !important;
   }
 }
-@media screen and (max-width: 426px) {
-  body .container {
+@media screen and (max-width: 436px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 29px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 23px;
+  }
+
+  h5 {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .container {
     max-width: 303px;
+  }
+  .container .items,
+.container .items-panel {
+    justify-content: center !important;
+  }
+  .container .items .item-card-acap,
+.container .items-panel .item-card-acap {
+    max-width: 260px !important;
+    text-align: center;
+  }
+  .container .items .item-card-acap .icon,
+.container .items-panel .item-card-acap .icon {
+    display: block;
+    margin: 0 auto;
+  }
+  .container .items .item-card-acap h4,
+.container .items-panel .item-card-acap h4 {
+    max-width: 100% !important;
+  }
+  .container .items .item-card-acap a,
+.container .items-panel .item-card-acap a {
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+  }
+  .container .news-home .cards-news-home {
+    justify-content: center;
+  }
+  .container .owl-carousel .item {
+    text-align: center;
+  }
+  .container .owl-carousel .item img {
+    width: 30%;
+    margin-bottom: 25px !important;
+  }
+  .container .owl-carousel .item button {
+    width: 100%;
+  }
+
+  .card-details-tc button {
+    width: 100% !important;
+  }
+
+  .nav-ed .container {
+    max-width: 100%;
+  }
+
+  .select-items .selector-group {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .select-items .selector-group select {
+    max-width: unset;
+    width: 100% !important;
+  }
+
+  .canals-app img {
+    display: block !important;
+    margin: 15px auto !important;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 321px) {
+  .container {
+    max-width: 260px;
+  }
+
+  .nav-ed .container {
+    max-width: 100%;
   }
 }
 

@@ -26,5 +26,17 @@
 .header-fix .third-head .right-side .divider {
   display: none;
 }
+@media screen and (max-width: 1100px) {
+  .header-fix .third-head .pad-head {
+    padding: 10px !important;
+  }
+  .header-fix .third-head ul li a {
+    font-size: 11px !important;
+  }
+  .header-fix .third-head .cta-internet-banking button {
+    min-width: unset !important;
+    font-size: 11px;
+  }
+}
 
 /*# sourceMappingURL=headers.css.map */

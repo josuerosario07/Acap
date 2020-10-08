@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,MAAM;EACF,gBAAgB,EAAE,kBAAkB;EACpC,SAAE;IACE,gBAAgB,EAAE,WAAW",
-"sources": ["../scss/bread.scss"],
-"names": [],
-"file": "bread.css"
-}
+{"version":3,"sourceRoot":"","sources":["../scss/bread.css"],"names":[],"mappings":";AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAOA;EACE;EAEA;EACA;EACA;EACA;EACA;EACA","file":"bread.css"}
