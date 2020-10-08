@@ -13,13 +13,13 @@
   margin: 0 auto;
 }
 @mixin btn-acap-light {
-  font-size: 12px;
+  font-size: 14px;
   color: $lightblueAcap;
   background-color: $white;
   border: solid 1px $lightblueAcap;
-  min-width: 228px;
-  height: 43px;
+  padding: 13px 50px;
   font-family: $nexaBold;
+  display: inline-block;
   &:hover {
     background-color: $blueAcap;
     color: $white;
@@ -28,16 +28,46 @@
   }
 }
 @mixin btn-acap-blue {
-  font-size: 12px;
+  font-size: 14px;
   color: $white;
   background-color: $blueAcap;
   border: solid 1px $white;
-  min-width: 228px;
-  height: 43px;
+  padding: 13px 50px;
   font-family: $nexaBold;
+  display: inline-block;
   &:hover {
     background-color: $white;
     color: $blueAcap;
+    border-color: $blueAcap;
+    transition: 0.2s;
+  }
+}
+@mixin btn-acap-gold {
+  font-size: 14px;
+  color: $white;
+  background-color: $goldAcap;
+  border: solid 1px $white;
+  padding: 13px 50px;
+  font-family: $nexaBold;
+  display: inline-block;
+  &:hover {
+    background-color: $white;
+    color: $goldAcap;
+    border-color: $white;
+    transition: 0.2s;
+  }
+}
+@mixin btn-acap-gold-light {
+  font-size: 14px;
+  color: $goldAcap;
+  background-color: $white;
+  border: solid 1px $goldAcap;
+  padding: 13px 50px;
+  font-family: $nexaBold;
+  display: inline-block;
+  &:hover {
+    background-color: $goldAcap;
+    color: $white;
     border-color: $white;
     transition: 0.2s;
   }
@@ -47,22 +77,24 @@
   color: $white;
   background-color: $blueAcap;
   border: solid 1px $blueAcap;
-  min-width: 228px;
-  height: 43px;
+  padding: 13px 50px;
+  display: inline-block;
 }
 @mixin btn-news-home {
-  width: 201px;
-  height: 44px;
   border: solid 1px $blueAcap;
   background-color: $white;
   color: $blueAcap;
-  font-size: 12px;
+  font-size: 14px;
+  padding: 13px 50px;
+  display: inline-block;
   &:hover {
     background-color: $blueAcap;
     color: $white;
     transition: 0.2s;
   }
 }
+
+
 
 @mixin card-item {
   max-width: 260px;
@@ -88,13 +120,8 @@
   a {
     position: absolute;
     bottom: 0;
-    @include flexColumn;
-    justify-content: center;
     text-align: center;
-    color: $lightblueAcap !important;
-    &:hover {
-      color: white !important;
-    }
+    width: 100%;
   }
 }
 @mixin card-news {
@@ -115,9 +142,11 @@
     .title-news {
       margin: 0 0 21px 0;
     }
-    button {
-      @include display-b-center;
-      margin-top: 60px;
+    a {
+     display: block;
+      width: 100% ;
+      text-align: center;
+      margin-top: 40px;
     }
   }
 }

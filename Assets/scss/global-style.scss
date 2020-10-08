@@ -24,11 +24,58 @@ h5 {
 p {
   font-size: 17px;
   font-family: nexaLight;
+  color: rgba(0, 0, 0, 0.803);
 }
+
+/*
 span {
   font-size: 12px;
   font-family: nexaBold;
 }
+*/
+
+//
+
+.btn-acap-blue a {
+
+  min-width: unset;
+
+  width: 100%;
+
+  color: white !important;
+
+  transition: 0.2s;
+
+
+
+
+  &:hover {
+
+      background-color: white;
+
+      border: solid 1px white;
+
+      color: $blueAcap !important;
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 a {
   font-size: 12px;
   font-family: nexaBold;
@@ -64,6 +111,9 @@ a {
 .green-Acap {
   color: $greenDollar;
 }
+.black-Acap{
+  color: rgba(0, 0, 0, 0.81);
+}
 .bg-gray {
   background-color: $bg-gray;
 }
@@ -84,12 +134,20 @@ a {
 .btn-acap-blue {
   @include btn-acap-blue;
 }
+.btn-acap-gold {
+  @include btn-acap-gold;
+}
+.btn-acap-gold-light {
+  @include btn-acap-gold-light;
+}
 .btn-acap-active {
   @include btn-acap-active;
 }
 .btn-news-home {
   @include btn-news-home;
 }
+
+
 // containers
 .container {
   max-width: 1088px;
@@ -115,3 +173,49 @@ ul {
 
   max-width: 712px;
 }
+
+//// center block
+
+.d-b-center{
+  @include display-b-center;
+}
+//margins
+.no-margin{
+  margin: 0 !important;
+}
+//pads
+
+.pad-Acap{
+  padding: 15px;
+}
+.pad-top-Acap{
+  padding-top: 15px;
+}
+.pad-left-Acap{
+  padding-left: 15px;
+}
+.pad-right-Acap{
+  padding-right: 15px;
+}
+.pad-bottom-Acap{
+  padding-bottom: 15px;
+}
+
+/// object fit
+
+.fit-cover{
+  object-fit: cover;
+}
+.fit-contain{
+  object-fit: contain;
+}
+
+///divider
+
+.divider-acap{
+  width: 20%;
+  height: 4px;
+  border-radius: 30px;
+  background-color: rgb(196, 196, 196);
+}
+

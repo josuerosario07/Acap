@@ -38,6 +38,22 @@
         }
       }
     }
+    form{
+      margin-left: 20px;
+      input{
+        border-radius: 30px;
+        min-width: 211px;
+        // height: 30px;
+      }
+      .btn{
+        font-size: 12px;
+        border-color: $goldAcap;
+        color: black;
+        &:hover{
+          background-color: $goldAcap;
+        }
+      }
+    }
   }
   .second-head {
     @include flexRow;
@@ -69,9 +85,8 @@
       @include flexRow;
       justify-content: flex-end;
       align-items: center;
-      padding-top: 10px;
-      padding-bottom: 10px;
       box-shadow: 10px 16px 42px rgba(0, 0, 0, 0.249);
+      position: relative;
       .left-side {
         display: none;
       }
@@ -85,6 +100,7 @@
             li {
               display: inline-block;
               margin: 0 0 0 17px;
+              padding: 20px 0;
               &:first-child {
                 margin-left: 0;
               }
@@ -96,6 +112,58 @@
               .active {
                 color: $blueAcap;
                 font-weight: 600;
+              }
+              .mega-menu{
+                width: 100%;
+                min-height:300px;
+                background: white;
+                position: absolute;
+                left: 0;
+                top: 55px;
+                z-index: 99;
+                transition:  0.2s ease-in-out;
+                display: none;
+                border-top: solid 0.5px rgb(210, 210, 210);
+                .inner-mega-menu{
+                  padding: 50px 0;
+                  @include flexRow;
+                  justify-content: space-between;
+                  .links{
+                    min-width: 180px;
+                    max-width: 220px;
+                    @include flexColumn;
+                    h5{
+                      border-bottom: 3px solid $blueAcap;
+                    }
+                    a{
+                      margin: 7.5px 0;
+                      text-transform: inherit;
+                    }
+                    span{
+                      font-family: $nexaLight;
+                    }
+                    form{
+                      width: 100%;
+                      input{
+                        width: 100%;
+                        border-radius: 0;
+                      }
+                    }
+                  }
+                }
+                @media screen  and(max-width:991px){
+                  display: none;
+                }
+              }
+              &:hover{
+                .mega-menu{
+                  display: block;
+                  .inner-mega-menu{
+                    .links{
+                      
+                    }
+                  }
+                }
               }
             }
           }
@@ -118,15 +186,16 @@
         }
         .cta-internet-banking {
           margin: 0 0 0 8px;
-          button {
+          .btn-banking {
             background-color: $redAcap;
             color: $white;
-            height: 40px;
-            min-width: 155px;
+           
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
             font-size: 13px;
             font-family: $nexaBold;
+            display: block;
             img {
               width: 15px;
               margin-right: 5px;
@@ -148,7 +217,14 @@
       margin: 0 0 0 5px !important;
     }
   }
-  @media screen and (max-width: 1115px) {
+  @media screen and (max-width: 1100px) {
+    ul {
+      li {
+        margin: 0 0 0 8px !important;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
     display: none;
   }
 }
@@ -175,16 +251,27 @@
       }
     }
     .right-side {
-      // nav {
-      //   ul {
-      //     li {
-      //       margin: 0 0 0 5px !important;
-      //     }
-      //   }
-      // }
       .search,
       .divider {
         display: none;
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      .pad-head {
+        padding: 10px !important;
+      }
+      ul {
+        li {
+          a {
+            font-size: 11px !important;
+          }
+        }
+      }
+      .cta-internet-banking {
+        button {
+          min-width: unset !important;
+          font-size: 11px;
+        }
       }
     }
   }
@@ -229,7 +316,7 @@
       justify-content: space-between;
       height: 67px;
       align-items: center;
-      background-color: #fafafa;
+
       .left-side {
         .curren-change-info {
           @include flexRow;
@@ -278,6 +365,9 @@
         }
       }
     }
+    @media screen and (max-width: 991px) {
+      background-color: #edededee;
+    }
   }
   @media screen and (max-width: 426px) {
     .second-head {
@@ -297,12 +387,12 @@
 }
 
 @mixin menu-responsive {
-  transition: 0.2s;
+  transition: 0.6s all ease-in-out;
   position: fixed;
   top: 0;
-  left: -100%;
-  width: 0;
-  height: 0;
+  left: -200%;
+  width: 100%;
+  height: 100%;
   background-color: $blueAcap;
   z-index: 999;
   overflow-y: scroll;
@@ -313,6 +403,7 @@
       right: 0;
       top: 50px;
       z-index: 999;
+      width: 25px;
     }
     .content {
       // overflow-y: scroll;
@@ -322,9 +413,8 @@
         justify-content: center;
         align-items: center;
         .logo {
-          margin-bottom: 30px;
+          margin: 100px 0 30px 0;
           width: 100%;
-          padding: 30px;
           img {
             @include display-b-center;
             width: 280px;
